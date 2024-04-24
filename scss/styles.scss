@@ -1,0 +1,628 @@
+/*  -------------------------------------------------------- main variables with values */
+
+$dark-green: #0C513F;
+$back-color: #28835B;
+$yellowgreen: #D7FC64;
+$skin-color: #FFF3CC;
+$dark-black: #1A1423;
+$orange: #FFC501;
+$normal-size-text: 1.2vw;
+$big-size-text: 3.125vw;
+
+
+/* -------------------------------------------------------- additional normalize overall */
+
+
+* {
+    z-index: 1;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    background-color: $back-color;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-weight: normal;
+    font-size: $normal-size-text;
+    line-height: 1.45vw;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: $big-size-text;
+    line-height: auto;
+}
+
+h4{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.458vw;
+    line-height: 1.458vw;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+/* -------------------------------------------------------- clouds in body tag */
+
+
+.container--clouds{
+    position: absolute;
+    width: 100%;
+    z-index: auto;
+}
+
+.cloud{
+    width: 40vw;                /* 40% of width of port view */
+    &--left{
+        margin-top: -20vw;
+        margin-left: -15vw;
+    }
+    &--right{
+        margin-left: 40vw;
+        margin-top: -30vw;
+    }
+    
+}
+
+
+/* -------------------------------------------------------- header */
+
+
+.header{
+    min-height: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5vw 0 6vw;
+
+    div{
+        height: 100%;
+    }
+
+    &--logo, &--nav{
+        border: 0.2vw solid $dark-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    &--logo{
+        width: 15vw;
+        background-color: $dark-green;
+        border-radius: 80px;    
+
+        span{
+            text-transform: uppercase;
+            font-size: 1.5vw;
+            font-weight: 200;
+            color: $skin-color;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--nav{
+        width: 60vw;
+        background-color: $skin-color;
+        border-radius: 40px;
+
+        ul{
+            width: 80%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: $normal-size-text;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        &--active-el{
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+/* block main */
+
+
+main{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container--banner{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* temporal margin */
+    margin-bottom: 6vw;
+
+    video{
+        position: absolute;
+        width: 70vw;
+        filter: brightness(40%);
+        -webkit-filter: brightness(40%);
+        -moz-filter: brightness(40%);
+        border-radius: 1vw;
+        z-index: 0;
+    }
+
+    blockquote{
+        color: $orange;
+        font-size: 3.5vw;
+        text-align: center;
+        letter-spacing: 1%;
+        font-weight: 700;
+        line-height: 3.5vw;
+        text-shadow: 5px 5px 50px $dark-black;
+    }
+}
+
+
+/* --- section with short information about each group */
+
+
+.short-info{
+    &--section{
+        width: 90%;
+        height: 34vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2.5vw;
+    }
+    
+    &--container{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    &--check-group{
+        width: 100%;
+        height: 3vw;
+        justify-content: space-between;
+        padding: 0.2vw 0.4vw;
+        align-items: center;
+        border: 0.05vw solid $dark-black;
+        border-radius: 2vw;
+        background-color: $skin-color;
+        
+        li{
+            position: relative;
+            width: 19.5%;
+            height: 95%;
+        }
+        
+        button{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-size: $normal-size-text;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: auto;
+            border: 2px solid transparent;
+            border-radius: 2vw;
+            background-color: inherit;
+            
+            &:hover{
+                background-color: #ffc40139;
+                cursor: pointer;
+            }
+            
+            &:focus{
+                background-color: $orange;
+                border-color: $dark-black;
+            }
+        }
+    }
+    
+    &--refs{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2vw;
+        
+        a{
+            fill: $dark-green;
+            
+            &:hover{
+                fill: $dark-black;
+            }
+        }
+    }
+}
+
+/* short information about every group (text-block if be accurate) */
+
+.block--info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(214, 252, 100, 0.2);
+    border: 0.2vw solid $dark-black;
+    border-radius: 2vw;
+    padding: 2vw 5.5vw;
+    margin-top: 1.4vw;
+
+    h3{
+        margin: 1vw 0;
+    }
+
+    p{
+        width: 40vw;
+    }
+}
+
+
+/* glass photo */
+
+
+.glass-photo {
+    width: 23%;
+    height: 90%;
+    position: relative;
+    border-radius: 1vw;
+    border: 2px solid $dark-black;
+
+    .photo, .glass{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: inherit;
+    }
+
+    .photo{
+        background-image: url(../images/main-page/nct-127.jpg);
+        z-index: 0;
+    }
+
+    .glass{
+        background-image: url(../images/main-page/glass-effect.svg);
+    }
+}
+
+
+/* -------------------------------------------------------- section more about each group */
+
+
+.section--more-info {
+    height: 34vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vw;
+
+    > p{
+        position: relative;
+        text-align: center;
+        margin: 2vw 0 3vw;
+
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../images/down-arrow.svg);
+            width: 1vw;
+            height: 1vw;
+            right: -5%;
+            top: 5%;
+            background-size: cover;
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    width: 90%;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+}
+
+.slides {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    transition: all 1s;
+    position: absolute;
+    width: 27.7%;
+    height: 90%;
+    border: 0.208vw solid $dark-black;
+    border-radius: 1vw;
+
+    > div {
+        margin: 1vw 0 0 1vw;
+    }
+
+    h4{
+        text-transform: uppercase;
+        width: 50%;
+        text-align: start;
+        margin: 0vw 0 1vw 2vw;
+    }
+    
+    p{
+        font-size: 0.833vw;
+        width: 16.667vw;
+        margin: 1vw 0;
+    }
+
+    small{
+        display: block;
+        width: 42%;
+        position: relative;
+        font-size: 0.7vw;
+        font-weight: 100;
+        text-transform: uppercase;
+
+        &::after{
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 10%;
+            width: 0.55vw;
+            height: 0.55vw;
+            background-image: url(../images/right-arrow.png);
+            background-size: cover;
+        }
+
+        &:hover{
+            cursor: pointer;
+            border-bottom: 1px solid #1A1423;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+}
+
+.arrow{
+    width: 1vw;
+    height: 1vw;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+    &--prev{
+        background-image: url(../images/left-arrow.png);
+        left: 5%;
+    }
+
+    &--next{
+        background-image: url(../images/right-arrow.png);
+        right: 5%;
+    }
+}
+
+
+/* ------------------------------------------------------- gallery, news */
+
+
+.container--gallery-fact{
+    width: 80%;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: 6vw;
+}
+
+.slider--gallery {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(215, 252, 100, 0.2);
+    overflow: hidden;
+    box-shadow: 0.25px 0.25px 1vw $dark-black;
+    /* border: 0.2vw solid $dark-black; */
+    border-radius: 2vw;
+
+    .slides{
+        position: static;
+        height: 70%;
+        width: 80%;
+    }
+
+    img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    .slide{
+        transition: all 1s;
+        border: 0;
+        border-radius: 1vw;
+
+        &--tools{
+            width: 100%;
+            height: 10%;
+            position: relative;
+        }
+    }
+
+    .arrow{
+        width: 4vw;
+        height: 3vw;
+        background-image: url(../images/wide-arrow-button.svg);
+        background-position: center;
+        top: 20%;
+
+        &--prev{
+            left: 9%;
+        }
+
+        &--next{
+            left: 30%;
+            transform: rotate(180deg);
+        }
+    }
+
+    span{
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: $normal-size-text;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+    }
+}
+
+.container--interest-fact {
+    width: 45%;
+    color: $dark-black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 0.2vw solid $dark-green;
+    border-bottom: 0.2vw solid $dark-green;
+    border-radius: 2vw;
+    padding: 3vw;
+    margin-right: 2vw;
+
+    h3{
+        position: relative;
+        text-align: start;
+        line-height: 4vw;
+        width: 80%;
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 3vw;
+            height: 3vw;
+            background-image: url(../images/svg-camera.svg);
+            background-size: cover;
+            transform: rotate(40deg);
+            bottom: 5%;
+            right: 30%;
+        }
+    }
+}
+
+.running-strip{
+    width: 80vw;
+    height: 3vw;
+    overflow: hidden;
+    display: flex;
+
+    &--inner{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        animation: marquee 18s infinite cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--el{
+        height: 80%;
+        font-size: $normal-size-text;
+        font-weight: 100;
+        padding: 0 1vw;
+        color: $skin-color;
+        text-align: center;
+        margin: 0 2vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0.3vw;
+        background-color: rgba(12, 81, 63, 0.2);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+      
+    100% {
+        transform: translateX(-121%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    min-height: 5vw;
+    background: PapayaWhip;
+    margin-top: 100vw;
+}
