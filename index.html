@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/stylesFromScss.css">
     <title>Головна</title>
 </head>
 <body>
     <!-- clouds -->
     <div class="container--clouds">
-        <img src="images/main-page/cloud-up.svg" class="clouds cloud-up" alt="">
-        <img src="images/main-page/cloud-down.svg" class="clouds cloud-down" alt="">
+        <img src="images/main-page/cloud-up.svg" class="cloud cloud--left" alt="">
+        <img src="images/main-page/cloud-down.svg" class="cloud cloud--right" alt="">
     </div>
     <!-- header -->
-    <header>
+    <header class="header">
         <div class="header--logo">
             <span>Nct World</span>
         </div>
@@ -40,13 +40,13 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="block--banner">
+        <div class="container--banner">
             <video src="images/main-page/banner-video.mp4" autoplay loop></video>
             <blockquote>To the world! <br> 여긴 NCT!</blockquote>
         </div>
         <!-- short information about each group -->
-        <section class="section--short-info">
-            <div class="container--short-info">
+        <section class="short-info--section">
+            <div class="short-info--container">
                 <ul class="short-info--check-group">
                     <li>
                         <button>NCT 127</button>
@@ -228,8 +228,8 @@
                         <img src="images/nct-fact-check-maybe.jpg" alt="">
                     </article>
                 </div>
-                <div class="prev-arrow"></div>
-                <div class="next-arrow"></div>
+                <div class="arrow arrow--prev"></div>
+                <div class="arrow arrow--next"></div>
             </div>
         </section>
         <div class="container--gallery-fact">
@@ -240,9 +240,9 @@
                     <img class="slide" src="images/taeyong.jpg" alt="">
                     <img class="slide" src="images/nct-someone.jpg" alt="">
                 </div>
-                <div class="slide-tools">
-                    <div class="prev-arrow"></div>
-                    <div class="next-arrow"></div>
+                <div class="slide--tools">
+                    <div class="arrow arrow--prev"></div>
+                    <div class="arrow arrow--next"></div>
                     <span>Тейон | NCT 127</span>
                 </div>
             </section>
@@ -278,7 +278,8 @@
             </div>
         </div>
         <section class="section--last-news">
-
+            <p>Останні новини</p>
+            
         </section>
     </main>
     <footer></footer>
