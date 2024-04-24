@@ -3,10 +3,10 @@
 const slider = function(el, widthSpace, numSlides){
     const element = document.querySelector(`.slider--${el}`);
     const slides = element.querySelectorAll('.slide');
-    const btnLeft = element.querySelector('.prev-arrow')
-    const btnRight = element.querySelector('.next-arrow')
+    const btnLeft = element.querySelector('.arrow--prev')
+    const btnRight = element.querySelector('.arrow--next')
 
-    console.log(element, slides, btnLeft, btnRight);
+    // console.log(element, slides, btnLeft, btnRight);
 
     let curSlide = 0;
     const maxSlide = slides.length;
@@ -31,11 +31,11 @@ const slider = function(el, widthSpace, numSlides){
     const prevSlide = function(){
         if(curSlide === 0){
             curSlide = maxSlide - numSlides;
-            console.log(curSlide);
+            // console.log(curSlide);
         }
         else{
             curSlide--;
-            console.log(curSlide);
+            // console.log(curSlide);
         }
         goToSlide(curSlide);
     }
