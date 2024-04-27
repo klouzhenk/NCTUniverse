@@ -252,8 +252,10 @@ main {
   position: relative;
   border-radius: 1vw;
   border: 2px solid #1A1423;
+  overflow: hidden;
 }
 .glass-photo .photo, .glass-photo .glass {
+  transition: all 0.5s;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -267,6 +269,10 @@ main {
 }
 .glass-photo .glass {
   background-image: url(../images/main-page/glass-effect.svg);
+}
+.glass-photo:hover .photo {
+  transition: all 0.5s;
+  transform: scale(1.1);
 }
 
 /* -------------------------------------------------------- section more about each group */
@@ -286,12 +292,13 @@ main {
 .section--more-info > p::after {
   position: absolute;
   content: "";
-  background-image: url(../images/down-arrow.svg);
+  background-image: url(../images/left-arrow.png);
   width: 1vw;
   height: 1vw;
-  right: -5%;
-  top: 5%;
+  right: -7%;
+  top: 15%;
   background-size: cover;
+  transform: rotate(270deg);
 }
 
 .slider {
@@ -647,7 +654,7 @@ main {
 }
 .section--q-a-article {
   width: 45%;
-  height: 88%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -655,11 +662,12 @@ main {
 .section--q-a h4 {
   text-align: left;
   font-size: 3.125vw;
+  line-height: normal;
 }
 
 .section--q-container {
   width: 100%;
-  height: 90%;
+  height: 82%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -717,7 +725,7 @@ main {
 
 .section--a {
   width: 100%;
-  height: 90%;
+  height: 82%;
   border: 0.2vw solid #1A1423;
   border-radius: 1vw;
   background-color: #28835B;
@@ -729,11 +737,198 @@ main {
   text-align: justify;
 }
 
-footer {
+.section--links {
+  width: 80%;
+  height: 30vw;
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section--links > img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.1vw solid #1A1423;
+  box-shadow: 0.2vw 0.2vw 0.2vw #1A1423;
+  border-radius: 1vw;
+}
+.section--links-main-content {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section--links-main-content > div {
   width: 100%;
-  min-height: 5vw;
-  background: PapayaWhip;
-  margin-top: 100vw;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.section--links-title {
+  font-size: 3.125vw;
+  line-height: 3vw;
+  color: #FFF3CC;
+  text-shadow: 0.2vw 0.2vw 0.2vw #1A1423;
+}
+.section--links-photo-member {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-5deg) scale(1.2);
+}
+.section--links-link {
+  transition: background-color 0.3s;
+  padding: 1vw 2vw;
+  margin: 0 1vw;
+  min-width: 10vw;
+  height: 4vw;
+  border: 0.2vw solid #1A1423;
+  border-radius: 0.5vw;
+  background-color: #FFF3CC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section--links-link span {
+  font-size: 1.2vw;
+}
+.section--links-link:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgba(215, 252, 100, 0.2);
+  transform: scale(1.02);
+}
+.section--links-link-container {
+  width: 68%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  min-height: 30vw;
+  background: #0C513F;
+  margin-top: 6vw;
+  border-top: 0.2vw solid #1A1423;
+  color: rgba(255, 243, 204, 0.5);
+}
+.footer > div {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer--section-logos {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  border-right: 0.05vw solid #1A1423;
+}
+.footer--section-logos img {
+  position: absolute;
+}
+.footer--section-popular {
+  width: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer--section-popular-title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 1.2vw;
+  color: #FFF3CC;
+}
+.footer--section-popular-list {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer--section-popular-list ul {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 0.01vw dashed rgba(255, 243, 204, 0.5);
+}
+.footer--section-popular-list ul:last-child {
+  border-right: none;
+}
+.footer--section-popular-list a:hover {
+  text-decoration: underline;
+}
+.footer--section-rights {
+  width: 100%;
+  height: 20%;
+  border-top: 0.05vw solid #1A1423;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer--section-rights small {
+  font-size: 0.8vw;
+}
+
+.footer--img-nct-lightstick {
+  top: 10%;
+  right: -2%;
+  width: 35%;
+  transform: rotate(-10deg);
+}
+.footer--img-nct-djj {
+  top: 25%;
+  left: 50%;
+  width: 25%;
+}
+.footer--img-nct-dream {
+  bottom: 7%;
+  left: 5%;
+  width: 25%;
+}
+.footer--img-nct-globe {
+  bottom: 7%;
+  right: 7%;
+  width: 20%;
+}
+.footer--img-nct-hand-sign {
+  top: 50%;
+  left: 35%;
+  width: 30%;
+  transform: rotate(15deg);
+}
+.footer--img-nct-127 {
+  top: 15%;
+  left: 25%;
+  width: 25%;
+  transform: rotate(-50deg);
+}
+.footer--img-nct-u {
+  top: 35%;
+  left: 5%;
+  width: 20%;
+}
+.footer--img-nct-wish {
+  top: 5%;
+  left: 5%;
+  width: 20%;
+}
+.footer--img-wayv {
+  top: -5%;
+  right: 20%;
+  width: 30%;
+  transform: rotate(-15deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
