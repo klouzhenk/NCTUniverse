@@ -2,6 +2,7 @@
 /* -------------------------------------------------------- additional normalize overall */
 * {
   z-index: 1;
+  box-sizing: border-box;
 }
 
 body {
@@ -176,10 +177,10 @@ main {
   justify-content: space-around;
 }
 .short-info--check-group {
-  width: 100%;
+  width: 110%;
   height: 3vw;
   justify-content: space-between;
-  padding: 0.2vw 0.4vw;
+  padding: 0.1vw 0.2vw;
   align-items: center;
   border: 0.05vw solid #1A1423;
   border-radius: 2vw;
@@ -226,12 +227,12 @@ main {
 
 /* short information about every group (text-block if be accurate) */
 .block--info {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgba(214, 252, 100, 0.2);
+  background-color: rgba(215, 252, 100, 0.2);
   border: 0.2vw solid #1A1423;
   border-radius: 2vw;
   padding: 2vw 5.5vw;
@@ -246,7 +247,7 @@ main {
 
 /* glass photo */
 .glass-photo {
-  width: 23%;
+  width: 30%;
   height: 90%;
   position: relative;
   border-radius: 1vw;
@@ -450,7 +451,7 @@ main {
 }
 
 .container--interest-fact {
-  width: 45%;
+  width: 53%;
   color: #1A1423;
   height: auto;
   display: flex;
@@ -518,18 +519,18 @@ main {
 }
 .last-news--section {
   width: 80%;
-  height: 35vw;
+  height: 45vw;
   margin-top: 6vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .last-news--section h3 {
   font-size: 3.3vw;
   font-weight: normal;
   text-align: left;
   position: relative;
-  margin-left: 4vw;
 }
 .last-news--section h3::after {
   position: absolute;
@@ -541,10 +542,30 @@ main {
   background-image: url(../images/kpop-tv.svg);
   background-size: cover;
 }
+.last-news--section > p {
+  width: 28%;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  border-bottom: 0.1vw solid #1A1423;
+  position: relative;
+}
+.last-news--section > p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.2vw;
+  height: 1.2vw;
+  background-image: url(../images/right-arrow-long.svg);
+  background-size: cover;
+}
+.last-news--section > p:hover {
+  cursor: pointer;
+}
 
 .last-news--container {
   width: 100%;
-  height: 80%;
+  height: 65%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -573,6 +594,8 @@ main {
   width: 100%;
   height: 59.5%;
   display: flex;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -601,7 +624,7 @@ main {
   font-size: 0.8vw;
   border-radius: 0.5vw;
   border: 0.05vw solid #0C513F;
-  background-color: rgba(214, 252, 100, 0.3);
+  background-color: rgba(215, 252, 100, 0.2);
 }
 .article-new > div .read--more:hover {
   cursor: pointer;
@@ -609,6 +632,101 @@ main {
 .article-new--date {
   font-size: 1.1vw;
   font-weight: bold;
+}
+
+.section--q-a {
+  width: 80%;
+  height: 40vw;
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 0.2vw solid #1A1423;
+  border-radius: 1vw;
+  background-color: rgba(215, 252, 100, 0.2);
+}
+.section--q-a-article {
+  width: 45%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section--q-a h4 {
+  text-align: left;
+  font-size: 3.125vw;
+}
+
+.section--q-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.section--q-container::-webkit-scrollbar {
+  width: 1vw;
+}
+.section--q-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.2vw #D7FC64;
+  border-radius: 0.2vw;
+}
+.section--q-container::-webkit-scrollbar-thumb {
+  background: #0C513F;
+  border-radius: 0.2vw;
+  border: 0.1vw solid #1A1423;
+}
+.section--q-container::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 1vw rgba(26, 20, 35, 0.5);
+}
+.section--q-question {
+  width: 95%;
+  height: 15%;
+  padding: 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
+  border: 0.1vw solid #1A1423;
+  background-color: rgba(215, 252, 100, 0.2);
+  box-shadow: 0.1vw 0.1vw 0.5vw #0C513F;
+}
+.section--q-question:last-child {
+  margin-bottom: 0.5vw;
+}
+.section--q-question:hover {
+  cursor: pointer;
+}
+.section--q-question svg {
+  display: none;
+}
+
+.active {
+  color: #FFF3CC;
+  background-color: #1A1423;
+}
+.active svg {
+  display: block;
+}
+
+.section--a {
+  width: 100%;
+  height: 90%;
+  border: 0.2vw solid #1A1423;
+  border-radius: 1vw;
+  background-color: #28835B;
+  padding: 2vw;
+}
+.section--a-text {
+  margin: 0;
+  margin-top: 2vw;
+  text-align: justify;
 }
 
 footer {
