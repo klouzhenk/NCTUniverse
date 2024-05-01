@@ -1,0 +1,101 @@
+/*  -------------------------------------------------------- main variables with values */
+
+$dark-green: #0C513F;
+$back-color: #28835B;
+$yellowgreen: #D7FC64;
+$skin-color: #FFF3CC;
+$skin-color-opacity: rgba(255, 243, 204, 0.5);
+$dark-black: #1A1423;
+$yellowgreen-opacity: rgba(215, 252, 100, 0.2);
+$orange: #FFC501;
+$normal-size-text: 1.2vw;
+$big-size-text: 3.125vw;
+
+.short-info {
+    &--section {
+        width: 80vw;
+        height: 25vw;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--text {
+        width: 55%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3{
+            color: $orange;
+            text-shadow: -0.1vw 0 $dark-black, 
+            0 0.1vw $dark-black, 
+            0.1vw 0 $dark-black, 
+            0 -0.1vw $dark-black;
+        }
+
+        p{
+            line-height: 1.75vw;
+            text-align: justify;
+        }
+    }
+
+    &--droplist{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $yellowgreen-opacity;
+        border-top: 0.2vw solid $dark-black;
+
+        span{
+            position: relative;
+            font-size: 1vw;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 0.8vw;
+                height: 0.8vw;
+                background-image: url(../../images/left-arrow.png);
+                transform: rotate(90deg);
+                background-size: cover;
+                right: -12%;
+                top: 20%;
+            }
+        }
+    }
+}
+
+.glass-photo{
+    .photo, .glass{
+            height: 85%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+    }
+    .glass-photo .photo {
+        background-image: url(../../images/girl-watch-kpop-post.jpg);
+    }
+
+    &:hover{
+        .photo{
+            transform: scale(1.0);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    margin-top: 20vw;
+}

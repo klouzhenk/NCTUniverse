@@ -1,0 +1,67 @@
+/*  -------------------------------------------------------- main variables with values */
+.short-info--section {
+  width: 80vw;
+  height: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.short-info--text {
+  width: 55%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.short-info--text h3 {
+  color: #FFC501;
+  text-shadow: -0.1vw 0 #1A1423, 0 0.1vw #1A1423, 0.1vw 0 #1A1423, 0 -0.1vw #1A1423;
+}
+.short-info--text p {
+  line-height: 1.75vw;
+  text-align: justify;
+}
+.short-info--droplist {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(215, 252, 100, 0.2);
+  border-top: 0.2vw solid #1A1423;
+}
+.short-info--droplist span {
+  position: relative;
+  font-size: 1vw;
+}
+.short-info--droplist span::after {
+  content: "";
+  position: absolute;
+  width: 0.8vw;
+  height: 0.8vw;
+  background-image: url(../../images/left-arrow.png);
+  transform: rotate(90deg);
+  background-size: cover;
+  right: -12%;
+  top: 20%;
+}
+
+.glass-photo .photo, .glass-photo .glass {
+  height: 85%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.glass-photo .glass-photo .photo {
+  background-image: url(../../images/girl-watch-kpop-post.jpg);
+}
+.glass-photo:hover .photo {
+  transform: scale(1);
+}
+
+.footer {
+  margin-top: 20vw;
+}
+
+/*# sourceMappingURL=nct127.css.map */
