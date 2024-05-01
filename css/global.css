@@ -132,7 +132,7 @@ main {
 
 .footer {
   width: 100%;
-  min-height: 30vw;
+  min-height: 20vw;
   background: #0C513F;
   margin-top: 6vw;
   border-top: 0.2vw solid #1A1423;
@@ -188,7 +188,7 @@ main {
   border-right: none;
 }
 .footer--section-popular-list ul a {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 .footer--section-popular-list a:hover {
   text-decoration: underline;
@@ -202,55 +202,55 @@ main {
   align-items: center;
 }
 .footer--section-rights small {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .footer--img-nct-lightstick {
-  top: 10%;
-  right: -2%;
-  width: 35%;
-  transform: rotate(-10deg);
+  top: 6%;
+  right: 2%;
+  width: 25%;
+  transform: rotate(-90deg);
 }
 .footer--img-nct-djj {
-  top: 25%;
-  left: 50%;
-  width: 25%;
+  top: 35%;
+  left: 57%;
+  width: 20%;
 }
 .footer--img-nct-dream {
   bottom: 7%;
-  left: 5%;
-  width: 25%;
+  left: 15%;
+  width: 15%;
 }
 .footer--img-nct-globe {
-  bottom: 7%;
-  right: 7%;
-  width: 20%;
+  bottom: 8%;
+  right: 8%;
+  width: 15%;
 }
 .footer--img-nct-hand-sign {
   top: 50%;
   left: 35%;
-  width: 30%;
+  width: 20%;
   transform: rotate(15deg);
 }
 .footer--img-nct-127 {
   top: 15%;
   left: 25%;
-  width: 25%;
+  width: 17%;
   transform: rotate(-50deg);
 }
 .footer--img-nct-u {
   top: 35%;
   left: 5%;
-  width: 20%;
+  width: 15%;
 }
 .footer--img-nct-wish {
-  top: 5%;
-  left: 5%;
-  width: 20%;
+  top: 7%;
+  left: 8%;
+  width: 15%;
 }
 .footer--img-wayv {
   top: -5%;
-  right: 20%;
+  right: 29%;
   width: 30%;
   transform: rotate(-15deg);
 }

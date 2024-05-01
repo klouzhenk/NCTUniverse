@@ -167,7 +167,7 @@ main{
 
 .footer {
     width: 100%;
-    min-height: 30vw;
+    min-height: 20vw;
     background: $dark-green;
     margin-top: 6vw;
     border-top: 0.2vw solid $dark-black;
@@ -228,7 +228,7 @@ main{
                     }
 
                     a{
-                        font-size: 1.2vw;
+                        font-size: $normal-size-text - 0.2vw;
                     }
                 }
 
@@ -247,7 +247,7 @@ main{
             align-items: center;
             
             small{
-                font-size: 1vw;
+                font-size: 0.8vw;
             }
         }
     }
@@ -256,51 +256,51 @@ main{
 .footer{
     &--img {
         &-nct-lightstick {
-            top: 10%;
-            right: -2%;
-            width: 35%;
-            transform: rotate(-10deg);
+            top: 6%;
+            right: 2%;
+            width: 25%;
+            transform: rotate(-90deg);
         }
         &-nct-djj {
-            top: 25%;
-            left: 50%;
-            width: 25%;
+            top: 35%;
+            left: 57%;
+            width: 20%;
         }
         &-nct-dream {
             bottom: 7%;
-            left: 5%;
-            width: 25%;
+            left: 15%;
+            width: 15%;
         }
         &-nct-globe {
-            bottom: 7%;
-            right: 7%;
-            width: 20%;
+            bottom: 8%;
+            right: 8%;
+            width: 15%;
         }
         &-nct-hand-sign {
             top: 50%;
             left: 35%;
-            width: 30%;
+            width: 20%;
             transform: rotate(15deg);
         }
         &-nct-127 {
             top: 15%;
             left: 25%;
-            width: 25%;
+            width: 17%;
             transform: rotate(-50deg);
         }
         &-nct-u {
             top: 35%;
             left: 5%;
-            width: 20%;
+            width: 15%;
         }
         &-nct-wish {
-            top: 5%;
-            left: 5%;
-            width: 20%;
+            top: 7%;
+            left: 8%;
+            width: 15%;
         }
         &-wayv {
             top: -5%;
-            right: 20%;
+            right: 29%;
             width: 30%;
             transform: rotate(-15deg);
         }
