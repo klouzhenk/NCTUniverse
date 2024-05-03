@@ -13,9 +13,8 @@ $big-size-text: 3.125vw;
 
 .short-info {
     &--section {
-        width: 80vw;
+        width: 70vw;
         height: 25vw;
-        // border: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -88,10 +87,60 @@ $big-size-text: 3.125vw;
     }
 }
 
+.page-content{
+    &--section {
+        margin-top: 3vw;
+        width: 70vw;
+        height: 25vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+    }
 
+    &--container{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 0.2vw solid $dark-black;
+        border-radius: 1vw;
+        position: relative;
 
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 0;
+          
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
 
+            background-image: url('../../images/nct-127-strict.jpg');
+            background-size: cover;
+            background-position: center;
 
+            filter: opacity(0.3);
+        }
+    }
+
+    &--title{
+        color: $dark-black;
+        font-size: $big-size-text - 1vw;
+    }
+    &--list{
+        flex-direction: column;
+    }
+    &--img{
+        width: 30%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
 
 
 

@@ -9,6 +9,7 @@
   margin-bottom: 3vw;
 }
 .container--banner video {
+  transition: filter 1s;
   position: absolute;
   width: 70vw;
   filter: brightness(40%);
@@ -16,6 +17,12 @@
   -moz-filter: brightness(40%);
   border-radius: 1vw;
   z-index: 0;
+}
+.container--banner video:hover {
+  transition: all 1s;
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
 }
 .container--banner blockquote {
   color: #FFC501;

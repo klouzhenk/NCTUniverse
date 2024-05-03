@@ -23,6 +23,7 @@ $big-size-text: 3.125vw;
     margin-bottom: 3vw;
 
     video{
+        transition: filter 1s;
         position: absolute;
         width: 70vw;
         filter: brightness(40%);
@@ -30,6 +31,13 @@ $big-size-text: 3.125vw;
         -moz-filter: brightness(40%);
         border-radius: 1vw;
         z-index: 0;
+
+        &:hover{
+            transition: all 1s;
+            filter: brightness(60%);
+            -webkit-filter: brightness(60%);
+            -moz-filter: brightness(60%);
+        }
     }
 
     blockquote{
