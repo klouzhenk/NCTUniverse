@@ -1,11 +1,13 @@
 /*  -------------------------------------------------------- main variables with values */
 
 $dark-green: #0C513F;
+$medium-green: #3f8a76;
 $back-color: #28835B;
 $yellowgreen: #D7FC64;
 $skin-color: #FFF3CC;
 $skin-color-opacity: rgba(255, 243, 204, 0.5);
 $dark-black: #1A1423;
+$dark-brown: #231414;
 $yellowgreen-opacity: rgba(215, 252, 100, 0.2);
 $orange: #FFC501;
 $normal-size-text: 1.2vw;
@@ -18,6 +20,7 @@ $big-size-text: 3.125vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
     }
 
     &--text {
@@ -40,21 +43,34 @@ $big-size-text: 3.125vw;
         }
     }
 
+    &--photo-and-info{
+        width: 30%;
+        height: 90%;
+        position: relative;
+    }
+
     &--droplist{
         position: absolute;
-        bottom: 0;
+        bottom: 10.5%;
         width: 100%;
         height: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $yellowgreen-opacity;
-        border-top: 0.2vw solid $dark-black;
+        background-color: rgb(38, 87, 74);
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+        border: 0.2vw solid $dark-black;
 
-        span{
+        &-title{
             position: relative;
             font-size: 1vw;
-
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
             &::after{
                 content: '';
                 position: absolute;
@@ -63,18 +79,52 @@ $big-size-text: 3.125vw;
                 background-image: url(../../images/left-arrow.png);
                 transform: rotate(90deg);
                 background-size: cover;
-                right: -12%;
-                top: 20%;
+                right: 20%;
+                top: 36%;
+            }
+        }
+        
+        
+        &-list{
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            width: 101.5%;
+            background-color: $medium-green;
+            border-bottom-left-radius: 1vw;
+            border-bottom-right-radius: 1vw;
+            border: 0.2vw solid $dark-black;
+            padding: 0 1vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            h5{
+                margin: 0;
+                width: 95%;
+                padding: 0.6vw 0;
+                border-bottom: 0.1vw solid $dark-green;
+                text-align: center;
+            }
+        }
+
+        &:hover{
+            span{
+                cursor: pointer;
             }
         }
     }
 }
 
+
 .glass-photo{
+    width: 100%;
+
     .photo, .glass{
-            height: 85%;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+        height: 85%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
     .glass-photo .photo {
         background-image: url(../../images/girl-watch-kpop-post.jpg);
@@ -142,8 +192,38 @@ $big-size-text: 3.125vw;
     }
 }
 
+.list-element {
+    width: 95%;
+    padding: 0.6vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.05vw solid $dark-green;
 
+    &:last-child{
+        border-bottom: none;
+    }
+    &--title{
+        width: 30%;
+        text-align: left;
+        font-size: $normal-size-text - 0.2vw;
+    }
 
+    &--text{
+        width: 60%;
+        text-align: left;
+        line-height: 1vw;
+        margin: 0;
+        font-size: $normal-size-text - 0.2vw;
+    }
+
+    a{
+        color: $dark-brown;
+        &:hover{
+            border-bottom: 0.1vw solid $dark-black;
+        }
+    }
+}
 
 .footer{
     margin-top: 20vw;

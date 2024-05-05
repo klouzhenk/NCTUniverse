@@ -21,9 +21,12 @@ p {
   line-height: 1.45vw;
 }
 
-h3 {
+h3, h4, h6, ul {
   padding: 0;
   margin: 0;
+}
+
+h3 {
   text-align: center;
   font-weight: 700;
   font-size: 3.125vw;
@@ -31,8 +34,6 @@ h3 {
 }
 
 h4 {
-  padding: 0;
-  margin: 0;
   text-align: center;
   font-weight: 500;
   font-size: 1.458vw;
@@ -46,8 +47,6 @@ a {
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
 }
 
@@ -68,6 +67,14 @@ ul {
 .cloud--right {
   margin-left: 40vw;
   margin-top: -30vw;
+}
+
+.unselectTitle {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* -------------------------------------------------------- header */
