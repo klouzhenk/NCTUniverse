@@ -12,6 +12,8 @@ $yellowgreen-opacity: rgba(215, 252, 100, 0.2);
 $orange: #FFC501;
 $normal-size-text: 1.2vw;
 $big-size-text: 3.125vw;
+$small-size-text: 0.8vw;
+
 
 .short-info {
     &--section {
@@ -242,6 +244,7 @@ $big-size-text: 3.125vw;
 
         a:hover{
             text-decoration: underline;
+            color: $dark-brown;
         }
     }
     &--img{
@@ -251,6 +254,96 @@ $big-size-text: 3.125vw;
     }
 }
 
+
+
+.history{
+    &--section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        height: 35vw;
+        margin-top: 3vw;
+        padding: 2vw 1vw;
+        background-color: $dark-green;
+        border: 1px solid black;
+        border-radius: 1vw;
+        
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        &-block{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p{
+                width: 70%;
+                color: $skin-color;
+            }
+        }
+    }
+
+    &--title{
+        color: $orange;
+        text-shadow: -0.1vw 0 $dark-black, 
+            0 0.1vw $dark-black, 
+            0.1vw 0 $dark-black, 
+            0 -0.1vw $dark-black;
+        margin-bottom: 3vw;
+    }
+}
+
+.single-paragraph p{
+    width: 100%;
+}
+
+.history--section-container{
+    /* width */
+    &::-webkit-scrollbar {
+        width: 1vw;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 0.4vw;
+        background: rgba(26, 20, 35, 0.1);
+    }
+     /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $dark-green;
+      border-radius: 0.4vw;
+      border: 0.1vw solid $dark-black;
+    }
+     /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+        box-shadow: inset 0 0 1vw rgba(26, 20, 35, 0.5);
+    }
+}
+
+.titled-img {
+    width: 25%;
+    // border: 1px solid pink;
+    font-size: $small-size-text;
+    margin: 1vw 0;
+
+    &--img{
+        width: 100%;
+    }
+    
+    &-title{
+        color: $skin-color-opacity;
+        font-weight: 100;
+        margin-top: 0.2vw;
+    }
+}
 
 
 .footer{
