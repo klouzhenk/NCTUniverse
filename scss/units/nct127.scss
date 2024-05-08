@@ -535,6 +535,395 @@ $small-size-text: 0.8vw;
 }
 
 
-.footer{
-    margin-top: 20vw;
+// dicography
+
+
+.discography{
+    &--section {
+        margin-top: 3vw;
+        width: 70vw;
+        height: 105vw;
+        border: 1px solid black;
+        background-color: $dark-green;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &--title-and-subsection {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 1vw;
+        border-bottom: 0.1vw solid $skin-color-opacity;
+        
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    &--title {
+        font-size: 1.875vw;
+        line-height: normal;
+        text-align: center;
+        color: $orange;
+        margin-bottom: 2vw;
+    }
+}
+
+
+.discography{
+    &--kor{
+        height: 44%;
+    }
+    &--jap{
+        height: 30%;
+    }
+    &--eng{
+        height: 26%;
+    }
+}
+
+.discography--subsection {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    &-col {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.discography--block {
+    width: 100%;
+    height: auto;
+    padding: 1.4vw 1.6vw;
+    border-radius: 1vw;
+    border: 0.1vw solid transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    &-title {
+        width: 100%;
+        padding-bottom: 0.8vw;
+        color: $dark-black;
+        font-size: 1.458vw;
+        border-bottom: 0.1vw solid $dark-green;
+    }
+    
+    &:hover{
+        border-color: $dark-black;
+    }
+}
+
+.discography--block-list {
+    flex-direction: column;
+    margin-top: 1vw;
+    
+    > li{
+        list-style-type: disc;
+        margin: 0.2vw 0;
+        margin-left: 1vw;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+        &::marker{
+            line-height: inherit;
+            font-size: 1vw;
+        }
+        
+        p{
+            margin: 0;
+            font-size: 0.8vw;
+            line-height: normal;
+        }
+        
+        ul{
+            list-style-type: disc;
+            flex-direction: column;
+            li{
+                margin: 0;
+                margin-left: 1vw;
+                font-size: 0.8vw;
+            }
+        }
+    }
+}
+
+.discography--jap, .discography--eng{
+    justify-content: space-between;
+    .discography--subsection{
+        justify-content: space-around;
+
+        &-col{
+            width: 40%;
+        }
+    }
+}
+
+.activity--section {
+    margin-top: 3vw;
+    padding: 2vw 0;
+    width: 70vw;
+    height: 50vw;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+        color: $orange;
+        width: 100%;
+        text-align: left;
+        padding: 0 0 2vw 3vw;
+        border-bottom: 0.2vw solid rgba(12, 81, 63, 0.5);
+        font-size: $big-size-text;
+    }
+
+    &-concerts, &-fanmeets {
+        width: 48%;
+    }
+
+    
+    .discography--block-list {
+        > li{
+            margin: 0.3vw 0;
+            margin-left: 2vw;
+
+            &::marker{
+                line-height: inherit;
+                font-size: 1vw;
+            }
+            
+            p{
+                margin: 0;
+                font-size: $normal-size-text + 0.1vw;
+            }
+            
+            ul{
+                list-style-type: disc;
+                flex-direction: column;
+                li{
+                    margin: 0.3vw 0;
+                    margin-left: 2vw;
+                    font-size: $normal-size-text;
+                }
+            }
+        }
+    }
+}
+
+.activity--section-fanmeets {
+    position: relative;
+    width: 45%;
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: 65%;
+        right: 0;
+        width: 100%;
+        height: 40%;
+        background-image: url(../../images/cherry-bullets.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotateY(3.142rad) rotate(180deg);
+        animation: cherry-bullets 4s infinite ease-in-out;
+    }
+}
+
+
+@keyframes cherry-bullets {
+    0% {
+        transform: scale(1.0);
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        transform: scale(1.025);
+        filter: hue-rotate(30deg);
+    }
+    100% {
+        transform: scale(1.0);
+        filter: hue-rotate(0deg);
+    }
+}
+
+
+.p--add-info-ref{
+    margin-top: 3vw;
+    width: 70vw;
+    text-align: center;
+    font-size: $normal-size-text + 0.2vw;
+
+    a{
+        text-decoration: underline;
+    }
+}
+
+
+.references--section {
+    margin-top: 3vw;
+    width: 70vw;
+    height: 25vw;
+    border: 0.2vw solid $dark-black;
+    border-radius: 1vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        z-index: 0;
+      
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+
+        background-image: url('../../images/nct-127-strict.jpg');
+        background-size: cover;
+        background-position: center;
+
+        filter: opacity(0.15);
+    }
+
+    &-title {
+        font-size: $big-size-text - 0.5vw;
+    }
+
+    &-list {
+        // border: 1px solid black;
+        width: 80%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-el{
+            transition: background-color 0.5s, box-shadow 0.5s;
+            display: block;
+            width: 30%;
+            height: 30%;
+            border: 0.15vw solid $dark-black;
+            border-radius: 0.75vw;
+            background-color: rgba(12, 81, 63, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                position: relative;
+                font-size: $normal-size-text;
+            }
+
+            &:hover{
+                transition: all 0.5s;
+                cursor: pointer;
+                background-color: rgba(12, 81, 63, 0.8);
+                box-shadow: 0 0 0.2vw rgba(12, 81, 63, 0.5);
+            }
+        }
+    }
+}
+
+.ref{
+    &::before{
+        position: absolute;
+        content: '';
+        width: 1vw;
+        height: 1vw;
+        top: 10%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 1vw;
+        height: 1vw;
+        top: 10%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &--twitter{
+        &::before{
+            left: -120%;
+            background-image: url(../../images/svg-icons/svg-twitter-x.svg);
+        }
+        &::after{
+            right: -120%;
+            background-image: url(../../images/svg-icons/svg-twitter-x.svg);
+        }
+    }
+    &--facebook{
+        &::before{
+            left: -100%;
+            background-image: url(../../images/svg-icons/svg-facebook.svg);
+        }
+        &::after{
+            right: -100%;
+            background-image: url(../../images/svg-icons/svg-facebook.svg);
+        }
+    }
+    &--tiktok{
+        &::before{
+            left: -135%;
+            background-image: url(../../images/svg-icons/svg-tiktok.svg);
+        }
+        &::after{
+            right: -135%;
+            background-image: url(../../images/svg-icons/svg-tiktok.svg);
+        }
+    }
+    &--instagram{
+        &::before{
+            left: -75%;
+            background-image: url(../../images/svg-icons/svg-instagram.svg);
+        }
+        &::after{
+            right: -75%;
+            background-image: url(../../images/svg-icons/svg-instagram.svg);
+        }
+    }
+    &--weverse{
+        &::before{
+            left: -100%;
+            background-image: url(../../images/svg-icons/png-weverse.png);
+        }
+        &::after{
+            right: -100%;
+            background-image: url(../../images/svg-icons/png-weverse.png);
+        }
+    }
+    &--youtube{
+        &::before{
+            left: -180%;
+            background-image: url(../../images/svg-icons/svg-youtube.svg);
+        }
+        &::after{
+            right: -180%;
+            background-image: url(../../images/svg-icons/svg-youtube.svg);
+        }
+    }
 }
