@@ -6,6 +6,7 @@ $yellowgreen: #D7FC64;
 $skin-color: #FFF3CC;
 $skin-color-opacity: rgba(255, 243, 204, 0.5);
 $dark-black: #1A1423;
+$dark-brown: #231414;
 $yellowgreen-opacity: rgba(215, 252, 100, 0.2);
 $orange: #FFC501;
 $normal-size-text: 1.2vw;
@@ -466,18 +467,21 @@ $big-size-text: 3.125vw;
         }
     }
 
-    > p{
-        width: 32%;
+    > a{
+        transition: all 0.5s ease-out;
+        width: 26%;
         text-transform: uppercase;
         letter-spacing: 0.1vw;
         border-bottom: 0.1vw solid $dark-black;
         position: relative;
 
         &::after{
+            transition: display 1s ease-out;
             content: '';
             position: absolute;
             top: 0;
             right: 0;
+            display: none;
             width: 1.2vw;
             height: 1.2vw;
             background-image: url(../images/right-arrow-long.svg);
@@ -485,7 +489,16 @@ $big-size-text: 3.125vw;
         }
 
         &:hover{
-            cursor: pointer;
+            transition: all 0.5s ease-out;
+            letter-spacing: 0.15vw;
+            color: $dark-brown;
+            width: 30%;
+            border-bottom-color: $dark-brown;
+
+            &::after{
+                transition: all 0.5s;
+                display: block;
+            }
         }
     }
 }
@@ -716,12 +729,14 @@ $big-size-text: 3.125vw;
             height: 100%;
             object-fit: cover;
             border-radius: inherit;
+            filter: grayscale(0.25);
         }
 
         &:hover{
             img{
                 transition: all 0.5s;
                 transform: scale(1.05);
+                filter: grayscale(0);
             }
         }
     }

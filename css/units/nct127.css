@@ -80,6 +80,7 @@
   padding: 0.6vw 0;
   border-bottom: 0.1vw solid #0C513F;
   text-align: center;
+  font-size: 1.2vw;
 }
 .short-info--droplist:hover span {
   cursor: pointer;
@@ -382,6 +383,7 @@
   text-align: center;
   border-bottom: 0.1vw solid rgba(255, 243, 204, 0.5);
   padding: 0.6vw;
+  font-size: 1.2vw;
 }
 .member-info--title li:last-child {
   border-bottom: none;
@@ -569,6 +571,7 @@
 .activity--section-title {
   color: #FFC501;
   width: 100%;
+  text-shadow: -0.1vw 0 #1A1423, 0 0.1vw #1A1423, 0.1vw 0 #1A1423, 0 -0.1vw #1A1423;
   text-align: left;
   padding: 0 0 2vw 3vw;
   border-bottom: 0.2vw solid rgba(12, 81, 63, 0.5);

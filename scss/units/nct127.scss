@@ -72,7 +72,7 @@ $small-size-text: 0.8vw;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             &::after{
                 content: '';
                 position: absolute;
@@ -107,6 +107,7 @@ $small-size-text: 0.8vw;
                 padding: 0.6vw 0;
                 border-bottom: 0.1vw solid $dark-green;
                 text-align: center;
+                font-size: $normal-size-text;
             }
         }
 
@@ -467,6 +468,7 @@ $small-size-text: 0.8vw;
             text-align: center;
             border-bottom: 0.1vw solid $skin-color-opacity;
             padding: 0.6vw;
+            font-size: $normal-size-text;
 
             &:last-child{
                 border-bottom: none;
@@ -686,6 +688,10 @@ $small-size-text: 0.8vw;
     &-title {
         color: $orange;
         width: 100%;
+        text-shadow: -0.1vw 0 $dark-black, 
+            0 0.1vw $dark-black, 
+            0.1vw 0 $dark-black, 
+            0 -0.1vw $dark-black;
         text-align: left;
         padding: 0 0 2vw 3vw;
         border-bottom: 0.2vw solid rgba(12, 81, 63, 0.5);

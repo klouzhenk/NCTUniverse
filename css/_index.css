@@ -395,25 +395,36 @@
   background-image: url(../images/kpop-tv.svg);
   background-size: cover;
 }
-.last-news--section > p {
-  width: 32%;
+.last-news--section > a {
+  transition: all 0.5s ease-out;
+  width: 26%;
   text-transform: uppercase;
   letter-spacing: 0.1vw;
   border-bottom: 0.1vw solid #1A1423;
   position: relative;
 }
-.last-news--section > p::after {
+.last-news--section > a::after {
+  transition: display 1s ease-out;
   content: "";
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
   width: 1.2vw;
   height: 1.2vw;
   background-image: url(../images/right-arrow-long.svg);
   background-size: cover;
 }
-.last-news--section > p:hover {
-  cursor: pointer;
+.last-news--section > a:hover {
+  transition: all 0.5s ease-out;
+  letter-spacing: 0.15vw;
+  color: #231414;
+  width: 30%;
+  border-bottom-color: #231414;
+}
+.last-news--section > a:hover::after {
+  transition: all 0.5s;
+  display: block;
 }
 
 .last-news--container {
@@ -610,10 +621,12 @@
   height: 100%;
   object-fit: cover;
   border-radius: inherit;
+  filter: grayscale(0.25);
 }
 .section--links-img:hover img {
   transition: all 0.5s;
   transform: scale(1.05);
+  filter: grayscale(0);
 }
 .section--links-main-content {
   width: 55%;
