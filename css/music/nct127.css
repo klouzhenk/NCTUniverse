@@ -1,0 +1,66 @@
+/*  -------------------------------------------------------- main variables with values */
+.albums--section {
+  margin-top: 4vw;
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.album--container {
+  width: 30%;
+  height: 25vw;
+  margin-bottom: 2vw;
+  border: 0.2vw solid #1A1423;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.album--img {
+  position: relative;
+  width: 85%;
+  height: 45%;
+  border: 0.15vw solid #1A1423;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.album--img img {
+  transition: filter 1s, transform 2s;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(100%);
+  transform: scale(1);
+}
+.album--img svg {
+  transition: all 0.2s;
+  opacity: 0;
+}
+.album--img:hover img {
+  transition: all 1s;
+  filter: brightness(40%);
+  transform: scale(1.05);
+}
+.album--img:hover svg {
+  transition: all 1s;
+  opacity: 1;
+}
+.album--info {
+  width: 85%;
+}
+.album--info p {
+  font-size: 1vw;
+  margin: 0.25vw;
+}
+.album--info p span {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=nct127.css.map */

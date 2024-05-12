@@ -441,6 +441,37 @@ main{
 }
 
 
+.breadcrumbs{
+    &--container{
+        width: 70vw;
+        display: flex;    
+    }
+
+    li{
+        position: relative;
+        font-size: $normal-size-text + 0.2vw;
+        color: $orange;
+        text-shadow: -0.1vw 0 $dark-black, 
+            0 0.1vw $dark-black, 
+            0.1vw 0 $dark-black, 
+            0 -0.1vw $dark-black;
+        padding: 0 1.5vw;
+
+        &::after{
+            position: absolute;
+            content: '>';
+            top: -10%;
+            right: -5%;
+        }
+
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
 
 
 // ------------------------ media queries

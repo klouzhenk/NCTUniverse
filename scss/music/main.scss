@@ -1,0 +1,302 @@
+/*  -------------------------------------------------------- main variables with values */
+
+$dark-green: #0C513F;
+$medium-green: #3f8a76;
+$back-color: #28835B;
+$yellowgreen: #D7FC64;
+$skin-color: #FFF3CC;
+$skin-color-opacity: rgba(255, 243, 204, 0.5);
+$dark-black: #1A1423;
+$dark-brown: #231414;
+$yellowgreen-opacity: rgba(215, 252, 100, 0.2);
+$orange: #FFC501;
+$normal-size-text: 1.2vw;
+$big-size-text: 3.125vw;
+$small-size-text: 0.8vw;
+
+.section{
+    width: 70vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+        width: 80%;
+        text-align: left;
+        color: $orange;
+        text-shadow: -0.1vw 0 $dark-black, 
+        0 0.1vw $dark-black, 
+        0.1vw 0 $dark-black, 
+        0 -0.1vw $dark-black;
+    }
+}
+
+.groups--section-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    &-el {
+        transition: transform 0.5s;
+        box-shadow: none;
+        transform: none;
+        width: 25%;
+        height: 42%;
+        border: 0.2vw solid $dark-black;
+        border-radius: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 2vw;
+        overflow: hidden;
+
+        img{
+            transition: transform 0.5s, filter 0.5s;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+            filter: brightness(40%);
+            transform: scale(1);
+        }
+
+        span{
+            transition: color 0.5s;
+            font-size: $big-size-text - 1vw;
+            font-weight: 700;
+            color: $skin-color;
+            text-shadow: -0.1vw 0 $dark-black, 
+            0 0.1vw $dark-black, 
+            0.1vw 0 $dark-black, 
+            0 -0.1vw $dark-black;
+        }
+        
+        &:hover{
+            transition: all 0.5s;
+            box-shadow: inset 0 0 2vw $dark-green, 0.2vw 0.2vw 0.2vw $dark-green;
+            transform: translate(-0.15vw, -0.15vw);
+
+            img{
+                transition: all 0.5s;
+                transform: scale(1.05);
+                filter: brightness(20%);
+            }
+            
+            span{
+                transition: all 0.5s;
+                $skin-color-opacity: rgba(255, 243, 204, 0.7);
+            }
+        }
+    }
+}
+
+.rec-albums--section{
+    margin-top: 4vw;
+    height: 22vw;
+    width: 80%;
+
+    &-title{
+        width: 72%;
+    }
+}
+
+.slider--rec-albums {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.slides {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.rec-albums--slide {
+    transition: transform 1s, 
+        background-color 0.5s cubic-bezier(0.83, 0.65, 0.14, 0.32), 
+        color 0.5s cubic-bezier(0.83, 0.65, 0.14, 0.32);
+    position: absolute;
+    width: 20%;
+    height: 90%;
+    border: 0.208vw solid $dark-black;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:hover{
+        transition: all 0.5s cubic-bezier(0.83, 0.65, 0.14, 0.32);
+        background-color: $dark-black;
+        color: $skin-color;
+    }
+
+    img{
+        width: 80%;
+        height: 65%;
+        object-fit: cover;
+        border: 0.1vw solid $dark-black;
+    }
+
+    &-group-name, &-album-name{
+        width: 80%;
+        font-weight: 700;
+    }
+
+    &-album-name{
+        font-size: $small-size-text;
+    }
+
+    &-group-name{
+        font-size: $small-size-text - 0.2vw;
+    }
+}
+
+.arrow{
+    width: 1vw;
+    height: 1vw;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+    &--prev{
+        background-image: url(../../images/left-arrow.png);
+        left: 5%;
+    }
+
+    &--next{
+        background-image: url(../../images/right-arrow.png);
+        right: 5%;
+    }
+}
+
+.top-songs--section {
+    margin-top: 4vw;
+
+    &-container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.top-song {
+    &--block{
+        transition: transform 1s, 
+            background-color 0.5s cubic-bezier(0.83, 0.65, 0.14, 0.32), 
+            color 0.5s cubic-bezier(0.83, 0.65, 0.14, 0.32);
+        width: 17%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 0.2vw solid $dark-black;
+        border-radius: 1vw;
+
+        &:hover{
+            transition: all 0.5s cubic-bezier(0.83, 0.65, 0.14, 0.32);
+            transform: scale(1.025);
+            background-color: $dark-black;
+            color: $skin-color;
+        }
+    }
+
+    &--album-img {
+        width: 80%;
+        height: 65%;
+        object-fit: cover;
+        border: inherit;
+    }
+
+    &--song-name, &--group-name {
+        width: 80%;
+        font-weight: 700;
+    }
+
+    &--song-name {
+        font-size: $small-size-text;
+    }
+
+    &--group-name {
+        font-size: $small-size-text - 0.2vw;
+    }
+}
+
+
+.top-songs-tables--section {
+    height: 70vw;
+    margin-top: 4vw;
+
+    &-title {
+        font-size: $big-size-text - 0.5vw;
+    }
+
+    > p{
+        text-align: center;
+    }
+}
+
+.top-songs-tables--container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-songs-tables--table-and-title {
+    width: 45%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-songs-tables--table {
+    width: 100%;
+    height: 80%;
+    border: 0.2vw solid $dark-black;
+    border-collapse: collapse;
+
+    &-title {
+        color: $skin-color;
+        text-shadow: -0.1vw 0 $dark-black, 
+        0 0.1vw $dark-black, 
+        0.1vw 0 $dark-black, 
+        0 -0.1vw $dark-black;
+        width: 80%;
+        text-align: left;
+    }
+
+    tr, th, td{
+        border: 0.15vw solid $dark-black;
+        text-align: center;
+        font-size: $normal-size-text - 0.2vw;
+    }
+
+    .title-row{
+        background-color: $dark-black;
+        color: $skin-color;
+        font-size: $normal-size-text;
+    }
+}

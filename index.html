@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="html/music/main.html">
                         <span>Музика</span>
                    </a>
                 </li>
@@ -576,6 +576,10 @@
             <small>© All Rights Reserved. 2024, Yuliia Vydryk. Всі інформаційні дані були взяті з відкритих джерел</small>
         </section>
     </footer>
-    <script src="js/slider.js"></script>
+    <script type="module">
+        import { slider } from '../../js/slider.js';
+        slider('more-info', 126, 3);
+        slider('gallery', 115, 1);
+    </script>
 </body>
 </html>

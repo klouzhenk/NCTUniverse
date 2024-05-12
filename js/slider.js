@@ -1,7 +1,8 @@
 // ---------------- building slider --------------------
 
-const slider = function(el, widthSpace, numSlides){
+export const slider = function(el, widthSpace, numSlides){
     const element = document.querySelector(`.slider--${el}`);
+    console.log(element);
     const slides = element.querySelectorAll('.slide');
     const btnLeft = element.querySelector('.arrow--prev')
     const btnRight = element.querySelector('.arrow--next')
@@ -50,5 +51,3 @@ const slider = function(el, widthSpace, numSlides){
     btnRight.addEventListener('click', nextSlide)
     btnLeft.addEventListener('click', prevSlide)
 }
-slider('more-info', 126, 3);
-slider('gallery', 115, 1);

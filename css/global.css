@@ -360,4 +360,25 @@ main {
   transform: scale(1.1);
 }
 
+.breadcrumbs--container {
+  width: 70vw;
+  display: flex;
+}
+.breadcrumbs li {
+  position: relative;
+  font-size: 1.4vw;
+  color: #FFC501;
+  text-shadow: -0.1vw 0 #1A1423, 0 0.1vw #1A1423, 0.1vw 0 #1A1423, 0 -0.1vw #1A1423;
+  padding: 0 1.5vw;
+}
+.breadcrumbs li::after {
+  position: absolute;
+  content: ">";
+  top: -10%;
+  right: -5%;
+}
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+
 /*# sourceMappingURL=global.css.map */
