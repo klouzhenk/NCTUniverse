@@ -1,0 +1,95 @@
+/*  -------------------------------------------------------- main variables with values */
+.photos--container {
+  margin-top: 2vw;
+  width: 70vw;
+  height: 125vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.photos--container-mini-long, .photos--container-mini-middle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.photos--container-mini-long {
+  width: 45vw;
+  height: 40vw;
+}
+.photos--container-mini-long .img--vast {
+  height: 15vw;
+  width: 25vw;
+}
+.photos--container-mini-long .img--square {
+  height: 15vw;
+  width: 15vw;
+}
+.photos--container-mini-middle {
+  width: 30vw;
+  height: 37.5vw;
+}
+.photos--container-mini-middle .img--vast {
+  height: 10vw;
+  width: 25vw;
+}
+.photos--container-mini-middle .img--square {
+  height: 10vw;
+  width: 10vw;
+}
+
+.main--text {
+  margin-top: 4vw;
+  width: 70vw;
+  text-align: center;
+}
+
+.photo--container {
+  border-radius: 1vw;
+  border: 0.15vw solid #0C513F;
+  overflow: hidden;
+  margin: 1vw;
+}
+.photo--container img {
+  transition: transform 1.6s, box-shadow 0.3s;
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo--container:hover {
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 0.5vw #0C513F;
+}
+.photo--container:hover img {
+  transition: transform 0.6s;
+  transform: scale(1.05);
+}
+
+.img--vast {
+  height: 15vw;
+  width: 30vw;
+}
+.img--vast-big {
+  height: 25vw;
+  width: 65vw;
+}
+.img--square {
+  height: 15vw;
+  width: 15vw;
+}
+.img--square-big {
+  height: 30vw;
+  width: 30vw;
+}
+.img--high {
+  height: 35vw;
+  width: 20vw;
+}
+.img--high-narrow {
+  height: 35vw;
+  width: 17.5vw;
+}
+
+/*# sourceMappingURL=gallery.css.map */

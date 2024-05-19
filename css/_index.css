@@ -63,14 +63,14 @@
 }
 .short-info--check-group li {
   position: relative;
-  width: 19.5%;
+  width: 16.5%;
   height: 95%;
 }
-.short-info--check-group button {
+.short-info-btn {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -79,13 +79,9 @@
   border-radius: 2vw;
   background-color: inherit;
 }
-.short-info--check-group button:hover {
+.short-info-btn:hover {
   background-color: rgba(255, 196, 1, 0.2235294118);
   cursor: pointer;
-}
-.short-info--check-group button:focus {
-  background-color: #FFC501;
-  border-color: #1A1423;
 }
 .short-info--refs {
   width: 80%;
@@ -102,8 +98,9 @@
 
 /* short information about every group (text-block if be accurate) */
 .block--info {
+  opacity: 0;
+  display: none;
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -531,6 +528,7 @@
   height: 82%;
   display: flex;
   flex-direction: column;
+  padding: 0.5vw 0;
   overflow-y: scroll;
   /* width */
   /* Track */
@@ -570,18 +568,11 @@
   margin-bottom: 0.5vw;
 }
 .section--q-question:hover {
+  transform: scaleY(1.05);
   cursor: pointer;
 }
 .section--q-question svg {
   display: none;
-}
-
-.active {
-  color: #FFF3CC;
-  background-color: #1A1423;
-}
-.active svg {
-  display: block;
 }
 
 .section--a {
@@ -593,6 +584,9 @@
   padding: 2vw;
 }
 .section--a-text {
+  transition: opacity 0.5s ease-in;
+  display: none;
+  opacity: 0;
   margin: 0;
   margin-top: 2vw;
   text-align: justify;
@@ -682,6 +676,35 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.active-shortinfo-btn {
+  background-color: #FFC501;
+  border-color: #1A1423;
+  font-weight: 700;
+}
+.active-shortinfo-btn:hover {
+  background-color: #FFC501;
+}
+.active-shortinfo-block {
+  opacity: 1;
+  display: flex;
+}
+.active-question {
+  color: #FFF3CC;
+  background-color: #1A1423;
+}
+.active-question svg {
+  display: block;
+}
+.active-answer {
+  transition: all 0.5s ease-in;
+  display: block;
+  opacity: 1;
+}
+
+.inactive-shortinfo-photo {
+  display: none;
 }
 
 /*# sourceMappingURL=_index.css.map */

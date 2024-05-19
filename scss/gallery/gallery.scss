@@ -1,0 +1,127 @@
+/*  -------------------------------------------------------- main variables with values */
+$dark-green: #0C513F;
+$back-color: #28835B;
+$yellowgreen: #D7FC64;
+$skin-color: #FFF3CC;
+$skin-color-opacity: rgba(255, 243, 204, 0.5);
+$dark-black: #1A1423;
+$yellowgreen-opacity: rgba(215, 252, 100, 0.2);
+$orange: #FFC501;
+$normal-size-text: 1.2vw;
+$big-size-text: 3.125vw;
+
+.photos--container {
+    margin-top: 2vw;
+    width: 70vw;
+    height: 125vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-mini {
+        &-long, &-middle{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &-long{
+            width: 45vw;
+            height: 40vw;
+
+            .img{
+                &--vast {
+                    height: 15vw;
+                    width: 25vw;
+                }
+            
+                &--square {
+                    height: 15vw;
+                    width: 15vw;
+                }
+            }
+        }
+
+        &-middle {
+            width: 30vw;
+            height: 37.5vw;
+
+            .img{
+                &--vast {
+                    height: 10vw;
+                    width: 25vw;
+                }
+            
+                &--square {
+                    height: 10vw;
+                    width: 10vw;
+                }
+            }
+        }
+    }
+}
+
+.main--text{
+    margin-top: 4vw;
+    width: 70vw;
+    text-align: center;
+}
+
+.photo--container {
+    border-radius: 1vw;
+    border: 0.15vw solid $dark-green;
+    overflow: hidden;
+    margin: 1vw;
+
+    img{
+        transition: transform 1.6s, box-shadow 0.3s;
+        transform: scale(1.0);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover{
+        transition: box-shadow 0.3s;
+        box-shadow: 0 0 0.5vw $dark-green;
+
+        img{
+            transition: transform 0.6s;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.img{
+    &--vast {
+        height: 15vw;
+        width: 30vw;
+
+        &-big{
+            height: 25vw;
+            width: 65vw;
+        }
+    }
+
+    &--square {
+        height: 15vw;
+        width: 15vw;
+
+        &-big{
+            height: 30vw;
+            width: 30vw;
+        }
+    }
+
+    &--high {
+        height: 35vw;
+        width: 20vw;
+
+        &-narrow{
+            height: 35vw;
+            width: 17.5vw;
+        }
+    }
+}
