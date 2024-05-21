@@ -67,6 +67,11 @@ $big-size-text: 3.125vw;
     margin-top: 4vw;
     width: 70vw;
     text-align: center;
+    color: #FFF3CC;
+    text-shadow: -0.1vw 0 $dark-green, 
+            0 0.1vw $dark-green, 
+            0.1vw 0 $dark-green, 
+            0 -0.1vw $dark-green;
 }
 
 .photo--container {

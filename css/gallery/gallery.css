@@ -43,6 +43,8 @@
   margin-top: 4vw;
   width: 70vw;
   text-align: center;
+  color: #FFF3CC;
+  text-shadow: -0.1vw 0 #0C513F, 0 0.1vw #0C513F, 0.1vw 0 #0C513F, 0 -0.1vw #0C513F;
 }
 
 .photo--container {

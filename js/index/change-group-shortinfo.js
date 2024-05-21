@@ -4,10 +4,6 @@ const infoBlocks = document.querySelectorAll('.block--info');
 const changeBtnsArr = [...changeBtns];
 let currBtnIndex = 0;
 
-console.log(changeBtns);
-console.log(glassPhotos);
-console.log(infoBlocks);
-
 const changeGroup = function(e){
     console.log(e.target);
     changeBtns[currBtnIndex].classList.remove('active-shortinfo-btn');

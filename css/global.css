@@ -105,13 +105,13 @@ ul {
   background-color: #0C513F;
   border-radius: 80px;
 }
-.header--logo span {
+.header--logo a {
   text-transform: uppercase;
   font-size: 1.5vw;
   font-weight: 200;
   color: #FFF3CC;
 }
-.header--logo span:hover {
+.header--logo a:hover {
   cursor: pointer;
 }
 .header--nav {
@@ -127,12 +127,15 @@ ul {
   flex-direction: row;
   justify-content: space-around;
 }
-.header--nav-links li a {
+.header--nav-links li a, .header--nav-links li h6 {
   height: 99%;
   padding: 1vw 2.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header--nav-links li h6 {
+  font-weight: normal;
 }
 .header--nav-links li span {
   font-size: 1.2vw;
@@ -181,14 +184,14 @@ ul {
 .header--droplist:hover .header--droplist-list {
   display: flex;
 }
-.header--droplist:hover a > span::after {
+.header--droplist:hover h6 > span::after {
   rotate: 90deg;
   top: 25%;
 }
-.header--droplist a > span {
+.header--droplist h6 > span {
   position: relative;
 }
-.header--droplist a > span::after {
+.header--droplist h6 > span::after {
   transition: rotate 0.5s, top 0.5s;
   position: absolute;
   content: "";
@@ -415,6 +418,17 @@ main {
   visibility: visible;
   opacity: 0.8;
   background-color: #1A1423;
+}
+
+.background-smooth {
+  --c: #0C513F; /* the color */
+  background: linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.background-smooth:hover {
+  --_p: 100% ;
 }
 
 /*# sourceMappingURL=global.css.map */

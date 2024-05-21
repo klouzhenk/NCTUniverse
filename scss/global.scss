@@ -129,7 +129,7 @@ ul{
         background-color: $dark-green;
         border-radius: 80px;    
 
-        span{
+        a{
             text-transform: uppercase;
             font-size: 1.5vw;
             font-weight: 200;
@@ -155,12 +155,16 @@ ul{
             justify-content: space-around;
             
             li{
-                a{
+                a, h6{
                     height: 99%;
                     padding: 1vw 2.5vw;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                }
+
+                h6{
+                    font-weight: normal;
                 }
 
                 span{
@@ -223,13 +227,13 @@ ul{
             .header--droplist-list{
                 display: flex;
             }
-            a > span::after{
+            h6 > span::after{
                 rotate: 90deg;
                 top: 25%;
             }
         }
 
-        a > span{
+        h6 > span{
             position: relative;            
 
             &::after{
@@ -510,6 +514,22 @@ main{
     background-color: $dark-black;
 }
 
+
+
+.background-smooth {
+    --c: #0C513F; /* the color */
+    
+    background: 
+      linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+            background-clip: text, padding-box;
+    transition: 0.5s;
+  
+    &:hover {
+      --_p: 100%
+    }
+}
 
 // ------------------------ media queries
 
