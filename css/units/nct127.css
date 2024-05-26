@@ -54,7 +54,7 @@
   position: absolute;
   width: 0.8vw;
   height: 0.8vw;
-  background-image: url(../../images/left-arrow.png);
+  background-image: url(../../images/additional-media/left-arrow.png);
   transform: rotate(90deg);
   background-size: cover;
   right: 20%;
@@ -125,7 +125,7 @@
   border-bottom-right-radius: 0;
 }
 .glass-photo .glass-photo .photo {
-  background-image: url(../../images/girl-watch-kpop-post.jpg);
+  background-image: url(../../images/additional-media/girl-watch-kpop-post.jpg);
 }
 .glass-photo:hover .photo {
   transform: scale(1);
@@ -727,51 +727,51 @@
 }
 .ref--twitter::before {
   left: -120%;
-  background-image: url(../../images/svg-icons/svg-twitter-x.svg);
+  background-image: url(../../images/svg-social-links/svg-twitter-x.svg);
 }
 .ref--twitter::after {
   right: -120%;
-  background-image: url(../../images/svg-icons/svg-twitter-x.svg);
+  background-image: url(../../images/svg-social-links/svg-twitter-x.svg);
 }
 .ref--facebook::before {
   left: -100%;
-  background-image: url(../../images/svg-icons/svg-facebook.svg);
+  background-image: url(../../images/svg-social-links/svg-facebook.svg);
 }
 .ref--facebook::after {
   right: -100%;
-  background-image: url(../../images/svg-icons/svg-facebook.svg);
+  background-image: url(../../images/svg-social-links/svg-facebook.svg);
 }
 .ref--tiktok::before {
   left: -135%;
-  background-image: url(../../images/svg-icons/svg-tiktok.svg);
+  background-image: url(../../images/svg-social-links/svg-tiktok.svg);
 }
 .ref--tiktok::after {
   right: -135%;
-  background-image: url(../../images/svg-icons/svg-tiktok.svg);
+  background-image: url(../../images/svg-social-links/svg-tiktok.svg);
 }
 .ref--instagram::before {
   left: -75%;
-  background-image: url(../../images/svg-icons/svg-instagram.svg);
+  background-image: url(../../images/svg-social-links/svg-instagram.svg);
 }
 .ref--instagram::after {
   right: -75%;
-  background-image: url(../../images/svg-icons/svg-instagram.svg);
+  background-image: url(../../images/svg-social-links/svg-instagram.svg);
 }
 .ref--weverse::before {
   left: -100%;
-  background-image: url(../../images/svg-icons/png-weverse.png);
+  background-image: url(../../images/svg-social-links/png-weverse.png);
 }
 .ref--weverse::after {
   right: -100%;
-  background-image: url(../../images/svg-icons/png-weverse.png);
+  background-image: url(../../images/svg-social-links/png-weverse.png);
 }
 .ref--youtube::before {
   left: -180%;
-  background-image: url(../../images/svg-icons/svg-youtube.svg);
+  background-image: url(../../images/svg-social-links/svg-youtube.svg);
 }
 .ref--youtube::after {
   right: -180%;
-  background-image: url(../../images/svg-icons/svg-youtube.svg);
+  background-image: url(../../images/svg-social-links/svg-youtube.svg);
 }
 
 .active-member {

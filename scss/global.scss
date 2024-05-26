@@ -49,7 +49,6 @@ h3{
     text-align: center;
     font-weight: 700;
     font-size: $big-size-text;
-    line-height: auto;
 }
 
 h4{
@@ -244,7 +243,7 @@ ul{
                 right: -40%;
                 width: 0.8vw;
                 height: 0.8vw;
-                background-image: url(../images/right-arrow.png);
+                background-image: url(../images/additional-media/right-arrow.png);
                 background-size: cover;
                 rotate: -90deg;
             }
@@ -432,12 +431,12 @@ main{
     }
 
     .photo{
-        background-image: url(../images/main-page/nct-127.jpg);
+        background-image: url(../images/additional-media/nct-127.jpg);
         z-index: 0;
     }
     
     .glass{
-        background-image: url(../images/main-page/glass-effect.svg);
+        background-image: url(../images/additional-media/glass-effect.svg);
     }
     
     &:hover{

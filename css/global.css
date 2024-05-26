@@ -199,7 +199,7 @@ ul {
   right: -40%;
   width: 0.8vw;
   height: 0.8vw;
-  background-image: url(../images/right-arrow.png);
+  background-image: url(../images/additional-media/right-arrow.png);
   background-size: cover;
   rotate: -90deg;
 }
@@ -357,11 +357,11 @@ main {
   border-radius: inherit;
 }
 .glass-photo .photo {
-  background-image: url(../images/main-page/nct-127.jpg);
+  background-image: url(../images/additional-media/nct-127.jpg);
   z-index: 0;
 }
 .glass-photo .glass {
-  background-image: url(../images/main-page/glass-effect.svg);
+  background-image: url(../images/additional-media/glass-effect.svg);
 }
 .glass-photo:hover .photo {
   transition: all 0.5s;

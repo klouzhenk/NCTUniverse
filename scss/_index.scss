@@ -172,7 +172,7 @@ $big-size-text: 3.125vw;
         &::after{
             position: absolute;
             content: '';
-            background-image: url(../images/left-arrow.png);
+            background-image: url(../images/additional-media/left-arrow.png);
             width: 1vw;
             height: 1vw;
             right: -7%;
@@ -241,7 +241,7 @@ $big-size-text: 3.125vw;
             top: 10%;
             width: 0.55vw;
             height: 0.55vw;
-            background-image: url(../images/right-arrow.png);
+            background-image: url(../images/additional-media/right-arrow.png);
             background-size: cover;
         }
 
@@ -272,12 +272,12 @@ $big-size-text: 3.125vw;
     cursor: pointer;
 
     &--prev{
-        background-image: url(../images/left-arrow.png);
+        background-image: url(../images/additional-media/left-arrow.png);
         left: 5%;
     }
 
     &--next{
-        background-image: url(../images/right-arrow.png);
+        background-image: url(../images/additional-media/right-arrow.png);
         right: 5%;
     }
 }
@@ -334,7 +334,7 @@ $big-size-text: 3.125vw;
     .arrow{
         width: 4vw;
         height: 2.2vw;
-        background-image: url(../images/wide-arrow-button.svg);
+        background-image: url(../images/additional-media/wide-arrow-button.svg);
         background-position: center;
         top: 0;
         border-radius: 0.2vw;
@@ -383,7 +383,7 @@ $big-size-text: 3.125vw;
             content: '';
             width: 3vw;
             height: 3vw;
-            background-image: url(../images/svg-camera.svg);
+            background-image: url(../images/additional-media/svg-camera.svg);
             background-size: cover;
             transform: rotate(40deg);
             bottom: 5%;
@@ -459,7 +459,7 @@ $big-size-text: 3.125vw;
             height: 3vw;
             width: 3vw;
             margin-left: 1vw;
-            background-image: url(../images/kpop-tv.svg);
+            background-image: url(../images/additional-media/kpop-tv.svg);
             background-size: cover;
         }
     }
@@ -481,7 +481,7 @@ $big-size-text: 3.125vw;
             display: none;
             width: 1.2vw;
             height: 1.2vw;
-            background-image: url(../images/right-arrow-long.svg);
+            background-image: url(../images/additional-media/right-arrow-long.svg);
             background-size: cover;
         }
 

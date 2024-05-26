@@ -175,12 +175,12 @@ $small-size-text: 0.8vw;
     cursor: pointer;
 
     &--prev{
-        background-image: url(../../images/left-arrow.png);
+        background-image: url(../../images/additional-media/left-arrow.png);
         left: 5%;
     }
 
     &--next{
-        background-image: url(../../images/right-arrow.png);
+        background-image: url(../../images/additional-media/right-arrow.png);
         right: 5%;
     }
 }
