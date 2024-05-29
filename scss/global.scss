@@ -431,8 +431,31 @@ main{
     }
 
     .photo{
-        background-image: url(../images/additional-media/nct-127.jpg);
         z-index: 0;
+
+        &--nct-127{
+            background-image: url(../images/nct127/7.jpg);
+        }
+
+        &--nct-dream{
+            background-image: url(../images/nctdream/9.jpg);
+        }
+
+        &--nct-u{
+            background-image: url(../images/nctu/11.jpg);
+        }
+
+        &--nct-wish{
+            background-image: url(../images/nctwish/5.jpg);
+        }
+
+        &--wayv{
+            background-image: url(../images/wayv/1.jpg);
+        }
+
+        &--nct-djj{
+            background-image: url(../images/nctdjj/3.jpg);
+        }
     }
     
     .glass{

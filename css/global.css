@@ -35,7 +35,6 @@ h3 {
   text-align: center;
   font-weight: 700;
   font-size: 3.125vw;
-  line-height: auto;
 }
 
 h4 {
@@ -357,8 +356,25 @@ main {
   border-radius: inherit;
 }
 .glass-photo .photo {
-  background-image: url(../images/additional-media/nct-127.jpg);
   z-index: 0;
+}
+.glass-photo .photo--nct-127 {
+  background-image: url(../images/nct127/7.jpg);
+}
+.glass-photo .photo--nct-dream {
+  background-image: url(../images/nctdream/9.jpg);
+}
+.glass-photo .photo--nct-u {
+  background-image: url(../images/nctu/11.jpg);
+}
+.glass-photo .photo--nct-wish {
+  background-image: url(../images/nctwish/5.jpg);
+}
+.glass-photo .photo--wayv {
+  background-image: url(../images/wayv/1.jpg);
+}
+.glass-photo .photo--nct-djj {
+  background-image: url(../images/nctdjj/3.jpg);
 }
 .glass-photo .glass {
   background-image: url(../images/additional-media/glass-effect.svg);

@@ -263,6 +263,10 @@ $big-size-text: 3.125vw;
     }
 }
 
+.img-border{
+    border-top: inherit;
+}
+
 .arrow{
     width: 1vw;
     height: 1vw;
@@ -332,19 +336,22 @@ $big-size-text: 3.125vw;
     }
 
     .arrow{
-        width: 4vw;
+        width: 6vw;
         height: 2.2vw;
         background-image: url(../images/additional-media/wide-arrow-button.svg);
+        background-size: 2.5vw;
+        background-color: $dark-black;
         background-position: center;
+        background-repeat: no-repeat;
         top: 0;
         border-radius: 0.2vw;
 
         &--prev{
-            left: 9%;
+            left: 15%;
         }
 
         &--next{
-            left: 30%;
+            left: 60%;
             transform: rotate(180deg);
         }
     }
