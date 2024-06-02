@@ -280,7 +280,7 @@
   position: relative;
 }
 .slider--gallery .arrow {
-  width: 6vw;
+  width: 4vw;
   height: 2.2vw;
   background-image: url(../images/additional-media/wide-arrow-button.svg);
   background-size: 2.5vw;
@@ -294,7 +294,7 @@
   left: 15%;
 }
 .slider--gallery .arrow--next {
-  left: 60%;
+  left: 40%;
   transform: rotate(180deg);
 }
 .slider--gallery span {
@@ -303,7 +303,7 @@
   font-size: 1.2vw;
   position: absolute;
   top: 20%;
-  right: 10%;
+  right: 15%;
 }
 
 .container--interest-fact {

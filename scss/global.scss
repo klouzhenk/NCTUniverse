@@ -14,6 +14,11 @@ $big-size-text: 3.125vw;
 
 /* -------------------------------------------------------- additional normalize overall */
 
+@font-face {
+    font-family: 'Disclaimer';
+    src: url(../font/disclaimer/Disclaimer-Plain.ttf) format('truetype');
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -130,10 +135,13 @@ ul{
 
         a{
             text-transform: uppercase;
-            font-size: 1.5vw;
-            font-weight: 200;
+            font-size: 4vw;
+            font-weight: 300;
             color: $skin-color;
-            
+            margin-bottom: 1vw;
+            font-family: 'Disclaimer', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            letter-spacing: 3px;
+
             &:hover{
                 cursor: pointer;
             }
