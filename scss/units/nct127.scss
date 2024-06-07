@@ -162,13 +162,13 @@ $small-size-text: 0.8vw;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
-    .glass-photo .photo {
-        background-image: url(../../images/additional-media/girl-watch-kpop-post.jpg);
+    .photo {
+        background-image: url(../../images/nct127/10.jpg);
     }
 
     &:hover{
         .photo{
-            transform: scale(1.0);
+            transform: scale(1.05);
         }
     }
 }
@@ -207,7 +207,7 @@ $small-size-text: 0.8vw;
             height: 100%;
             border-radius: inherit;
 
-            background-image: url('../../images/nct-127-strict.jpg');
+            background-image: url('../../images/nct127/18.jpg');
             background-size: cover;
             background-position: center;
 
@@ -223,9 +223,14 @@ $small-size-text: 0.8vw;
         width: 80%;
         flex-direction: column;
         font-size: $normal-size-text;
+        background-color: $back-color;
+        border: inherit;
+        border-radius: inherit;
+        padding: 1vw 4vw;
+        margin: 0;
 
         li{
-            list-style-type:decimal;
+            list-style-type: decimal;
             margin-bottom: 0.5vw;
 
             ul{
@@ -456,7 +461,7 @@ $small-size-text: 0.8vw;
     width: 100%;
     height: 85%;
     padding: 1vw;
-    background-color: $orange;
+    background-color: $yellowgreen-opacity;
     border-radius: 1vw;
     border: 0.2vw solid $dark-black;
     // display: flex;
@@ -741,7 +746,7 @@ $small-size-text: 0.8vw;
         right: 0;
         width: 100%;
         height: 40%;
-        background-image: url(../../images/cherry-bullets.png);
+        background-image: url("../../images/additional-media/cherry-bullets.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -803,11 +808,11 @@ $small-size-text: 0.8vw;
         height: 100%;
         border-radius: inherit;
 
-        background-image: url('../../images/nct-127-strict.jpg');
+        background-image: url('../../images/nct127/17.jpg');
         background-size: cover;
         background-position: center;
 
-        filter: opacity(0.15);
+        filter: opacity(0.25);
     }
 
     &-title {
