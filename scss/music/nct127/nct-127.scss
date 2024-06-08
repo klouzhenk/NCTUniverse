@@ -99,12 +99,16 @@ $big-size-text: 3.125vw;
                     display: none;
                 }
 
-                p{
+                pre{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: $normal-size-text - 0.2vw;
                     color: $skin-color;
                     font-weight: lighter;
                     width: 90%;
                     text-align: center;
                     margin: 1.5vw 0.5vw;
+                    white-space: pre-line;
+
                     -webkit-user-select: none;
                     -khtml-user-select: none;
                     -moz-user-select: none;
@@ -117,6 +121,7 @@ $big-size-text: 3.125vw;
         
         &-name {
             font-size: $normal-size-text;
+            margin-top: 0.5vw;
         }
     }
 }
