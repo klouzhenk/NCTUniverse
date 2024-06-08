@@ -1,0 +1,13 @@
+.glass-photo .photo {
+  background-image: url("../../images/nctwish/3.jpg");
+}
+
+.page-content--backgr::before {
+  background-image: url("../../images/nctwish/4.jpg");
+}
+
+.references--section::before {
+  background-image: url("../../images/nctwish/11.jpg");
+}
+
+/*# sourceMappingURL=nctwish.css.map */

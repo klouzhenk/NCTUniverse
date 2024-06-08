@@ -1,0 +1,13 @@
+.glass-photo .photo {
+  background-image: url("../../images/nctu/8.jpg");
+}
+
+.page-content--backgr::before {
+  background-image: url("../../images/nctu/9.jpg");
+}
+
+.references--section::before {
+  background-image: url("../../images/nctu/6.jpg");
+}
+
+/*# sourceMappingURL=nctu.css.map */
