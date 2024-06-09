@@ -79,6 +79,10 @@ $small-size-text: 0.8vw;
         text-align: center;
         font-size: $normal-size-text - 0.2vw;
         margin: 0;
+
+        a{
+            text-decoration: underline;
+        }
     }
 
     > div{

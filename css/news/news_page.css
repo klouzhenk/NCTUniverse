@@ -57,6 +57,9 @@
   font-size: 1vw;
   margin: 0;
 }
+.article-new--info a {
+  text-decoration: underline;
+}
 .article-new > div {
   width: 80%;
   display: flex;
